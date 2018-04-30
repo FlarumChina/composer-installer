@@ -226,7 +226,7 @@ if(isset($_REQUEST['ajax']) && !empty($_REQUEST["ajax"])) {
     }elseif($_REQUEST['ajax'] == 'composer'){
         touch($pockethold->tpath . 'composer.log');
         touch($pockethold->tpath . 'compose.start');
-        $pockethold->phcomposer('create-project flarum/flarum ./flarumtemp --stability=beta --prefer-dist --no-progress -n');
+        $pockethold->phcomposer('create-project flarumchina/flarumchina ./flarumtemp --stability=beta --prefer-dist --no-progress -n');
         touch($pockethold->tpath . 'compose.done');
     }elseif($_REQUEST['ajax'] == "bazaar" ){
         touch($pockethold->tpath . 'bazaar.start');
